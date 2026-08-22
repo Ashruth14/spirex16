@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Event Registration System</h1>
+
+        <p>
+            Find an event and register easily!
+        </p>
+    </header>
+
+
+    <!-- Events Section -->
+    <section class="events-section">
+
+        <h2>Upcoming Events</h2>
+
+        <div class="event-container">
+
+            <!-- Event 1 -->
+            <div class="event-card">
+
+                <h3>Web Development Workshop</h3>
+
+                <p>
+                    Learn the basics of HTML, CSS and JavaScript
+                    and create your first website.
+                </p>
+
+                <p><strong>Date:</strong> 25 August 2026</p>
+
+                <p><strong>Location:</strong> Hyderabad</p>
+
+                <button onclick="selectEvent('Web Development Workshop')">
+                    Register
+                </button>
+
+            </div>
+
+
+            <!-- Event 2 -->
+            <div class="event-card">
+
+                <h3>AI & Machine Learning Seminar</h3>
+
+                <p>
+                    Understand how Artificial Intelligence and
+                    Machine Learning are changing the world.
+                </p>
+
+                <p><strong>Date:</strong> 30 August 2026</p>
+
+                <p><strong>Location:</strong> Hyderabad</p>
+
+                <button onclick="selectEvent('AI & Machine Learning Seminar')">
+                    Register
+                </button>
+
+            </div>
+
+
+            <!-- Event 3 -->
+            <div class="event-card">
+
+                <h3>Hackathon 2026</h3>
+
+                <p>
+                    Build an innovative project with your team
+                    and compete with other developers.
+                </p>
+
+                <p><strong>Date:</strong> 5 September 2026</p>
+
+                <p><strong>Location:</strong> Hyderabad</p>
+
+                <button onclick="selectEvent('Hackathon 2026')">
+                    Register
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Registration Form -->
+    <section class="registration-section">
+
+        <h2>Register for an Event</h2>
+
+        <form id="registrationForm">
+
+            <label for="name">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+
+            <label for="email">
+                Email Address
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+
+            <label for="phone">
+                Phone Number
+            </label>
+
+            <input
+                type="text"
+                id="phone"
+                placeholder="Enter your phone number"
+            >
+
+
+            <label for="event">
+                Select Event
+            </label>
+
+            <select id="event">
+
+                <option value="">
+                    -- Select an Event --
+                </option>
+
+                <option value="Web Development Workshop">
+                    Web Development Workshop
+                </option>
+
+                <option value="AI & Machine Learning Seminar">
+                    AI & Machine Learning Seminar
+                </option>
+
+                <option value="Hackathon 2026">
+                    Hackathon 2026
+                </option>
+
+            </select>
+
+
+            <button type="submit">
+                Submit Registration
+            </button>
+
+        </form>
+
+        <!-- Success message -->
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- Registered Users -->
+    <section class="registered-section">
+
+        <h2>Registered Participants</h2>
+
+        <div id="registrationsList">
+
+            <p>
+                No registrations yet.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
